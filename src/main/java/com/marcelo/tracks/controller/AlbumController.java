@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class AlbumController {
 
     @Autowired
-    AlbumService albumService;
+    private AlbumService albumService;
 
     public AlbumController(AlbumService albumService) {
         this.albumService = albumService;

@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 public class AlbumServiceImpl implements AlbumService {
 
     @Autowired
-    AlbumRepository albumRepository;
+    private AlbumRepository albumRepository;
 
     public AlbumServiceImpl(AlbumRepository albumRepository) {
         this.albumRepository = albumRepository;

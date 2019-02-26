@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class ArtistController {
 
     @Autowired
-    ArtistService artistService;
+    private ArtistService artistService;
 
     public ArtistController(ArtistService artistService) {
         this.artistService = artistService;

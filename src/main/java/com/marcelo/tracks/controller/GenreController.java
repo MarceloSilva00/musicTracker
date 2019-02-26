@@ -33,12 +33,6 @@ public class GenreController {
         return genreService.add(genre);
     }
 
-    @DeleteMapping("/{genre_id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable(value = "genre_id") long id){
-        genreService.delete(id);
-    }
-
     @PutMapping("/{genre_id}")
     public Genre edit(@PathVariable(value = "genre_id") long id,@RequestBody Genre genre){
         return genreService.edit(id,genre);

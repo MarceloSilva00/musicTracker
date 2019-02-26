@@ -24,16 +24,16 @@ import java.util.Optional;
 public class TrackServiceImpl implements TrackService {
 
     @Autowired
-    TrackRepository trackRepository;
+    private TrackRepository trackRepository;
 
     @Autowired
-    GenreRepository genreRepository;
+    private GenreRepository genreRepository;
 
     @Autowired
-    ArtistRepository artistRepository;
+    private ArtistRepository artistRepository;
 
     @Autowired
-    AlbumRepository albumRepository;
+    private AlbumRepository albumRepository;
 
 
     public TrackServiceImpl(TrackRepository trackRepository, GenreRepository genreRepository, ArtistRepository artistRepository, AlbumRepository albumRepository) {
