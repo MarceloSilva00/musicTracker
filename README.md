@@ -19,7 +19,7 @@ Mysql Database
 
 Clone the repository
 ```
-git clone http://-------------------------------------------------
+git clone https://github.com/MarceloSilva00/musicTracker.git
 ```
 
 
